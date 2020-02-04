@@ -1,1 +1,20 @@
-<h1>Hola soy el Body Component</h1>
+<div class="row">
+    <div class="col">
+        <h1>*NgIf</h1>
+        <hr>
+        <div *ngIf='mostrar' class="card text-white bg-primary mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{frase.autor}}</h5>
+                <p class="card-text">{{frase.mensaje}}</p>
+            </div>
+        </div>
+        <button (click)='mostrar = !mostrar' type="button" class="btn btn-outline-primary btn-block">Mostar/Ocultar</button>
+    </div>
+    <div class="col">
+        <h1>*NgFor</h1>
+        <hr>
+        <ul *ngFor="let refresco of refrescos; let i= index" class="list-group">
+            <li class="list-group-item">{{i + 1}}.- {{refresco}}</li>
+        </ul>
+    </div>
+</div>

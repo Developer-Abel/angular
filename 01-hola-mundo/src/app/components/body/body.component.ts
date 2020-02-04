@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
 })
 
 export class BodyComponent{
-    
+    mostrar = true;
+    frase: any = {
+        mensaje: 'Un gran poder requiere una gran responsabilidad',
+        autor: 'Peter Parker'
+    };
+    refrescos: string[] = ['coca-cola', 'pepsi', 'mirinda'];
 }
