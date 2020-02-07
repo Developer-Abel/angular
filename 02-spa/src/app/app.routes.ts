@@ -17,7 +17,7 @@ const APP_ROUTES: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'creador', component: CreadorComponent},
-    // { path: 'heroe/:id', component: HeroeComponent}, //segunda forma de crear una ruta con parametros
+    { path: 'heroe/:id', component: HeroeComponent}, //segunda forma de crear una ruta con parametros
     { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
