@@ -58,8 +58,13 @@ export class HeroesService {
     constructor( ) {
         console.log('servicio listpo para usar');
     }
+    
     getHeroes(): Heroe[] {
         return this.heroes;
+    }
+    getHeroe(idx: string) {
+       return this.heroes[idx];
+      // return "soy getHeroe()"+this.heroes[];
     }
 
 }

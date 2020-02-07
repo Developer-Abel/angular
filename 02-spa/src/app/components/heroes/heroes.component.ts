@@ -14,7 +14,7 @@ export class HeroesComponent implements OnInit {
   heroes: Heroe [] = [];
 
   constructor( private _heroesService: HeroesService,
-               private router:Router
+               private router: Router
     ) {
 
     // console.log('constructor');
@@ -24,12 +24,12 @@ export class HeroesComponent implements OnInit {
   ngOnInit() {
 
     this.heroes = this._heroesService.getHeroes();
-    // console.log(this.heroes);
+    //  console.log(this.heroes);
   }
-verHeroe(idx:number){
-// console.log(idx); //ver el console.log para ver lo que pasa
-this.router.navigate(['/heroe',idx]);
-}
+  verHeroe(idx: number){
+  //  console.log(idx); //ver el console.log para ver lo que pasa
+  this.router.navigate(['/heroe', idx]);
+  }
 }
 
 
