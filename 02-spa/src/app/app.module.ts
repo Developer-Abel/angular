@@ -6,6 +6,8 @@ import { APP_ROUTING } from './app.routes';
 
 // servicios
 import { HeroesService } from './servicios/heroes.service';
+import { DragonballService } from './servicios/dragonball.service';
+
 
 
 // componentes
@@ -17,6 +19,8 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { CreadorComponent } from './components/creador/creador.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { DragonballsComponent } from './components/dragonballs/dragonballs.component';
+import { DragonballComponent } from './components/dragonball/dragonball.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     AboutComponent,
     HeroesComponent,
     CreadorComponent,
-    HeroeComponent
+    HeroeComponent,
+    DragonballsComponent,
+    DragonballComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,8 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     APP_ROUTING
   ],
   providers: [
-    HeroesService
+    HeroesService,
+    DragonballService
   ],
   bootstrap: [AppComponent]
 })

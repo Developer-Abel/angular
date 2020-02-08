@@ -15,9 +15,7 @@ import { HeroesService } from '../../servicios/heroes.service';
 export class HeroeComponent {
    heroe: any = {};
 
-  constructor( private activateRoute: ActivatedRoute,
-               private  _heroesService: HeroesService
-   ) {
+  constructor( private activateRoute: ActivatedRoute, private  _heroesService: HeroesService) {
 
      this.activateRoute.params.subscribe( params => {
          // console.log(params['id']); //este parametro es lo que va a recivir el metodo de servicio

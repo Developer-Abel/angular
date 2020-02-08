@@ -5,8 +5,8 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { CreadorComponent } from './components/creador/creador.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
-
-
+import { DragonballsComponent } from './components/dragonballs/dragonballs.component';
+import { DragonballComponent } from './components/dragonball/dragonball.component';
 
 
 
@@ -17,7 +17,9 @@ const APP_ROUTES: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'creador', component: CreadorComponent},
-    { path: 'heroe/:id', component: HeroeComponent}, //segunda forma de crear una ruta con parametros
+    { path: 'heroe/:id', component: HeroeComponent}, // segunda forma de crear una ruta con parametros
+    { path: 'dragonballs', component: DragonballsComponent },
+    { path: 'dragonball/:id', component: DragonballComponent}, // no olvidar el id -> :id
     { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

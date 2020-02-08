@@ -27,7 +27,7 @@ export class HeroesComponent implements OnInit {
     //  console.log(this.heroes);
   }
   verHeroe(idx: number){
-  //  console.log(idx); //ver el console.log para ver lo que pasa
+  //  console.log(idx); //envia el id por la url (solo hace falta cacharlo)
   this.router.navigate(['/heroe', idx]);
   }
 }
