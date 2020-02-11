@@ -21,6 +21,7 @@ import { CreadorComponent } from './components/creador/creador.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { DragonballsComponent } from './components/dragonballs/dragonballs.component';
 import { DragonballComponent } from './components/dragonball/dragonball.component';
+import { Heroe2Component } from './components/heroe2/heroe2.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DragonballComponent } from './components/dragonball/dragonball.componen
     CreadorComponent,
     HeroeComponent,
     DragonballsComponent,
-    DragonballComponent
+    DragonballComponent,
+    Heroe2Component
   ],
   imports: [
     BrowserModule,

@@ -66,4 +66,5 @@ export class DragonballService {
          return this.guerreros[idx];
         // console.log("soy getGuerrero");
     }
+ 
 }

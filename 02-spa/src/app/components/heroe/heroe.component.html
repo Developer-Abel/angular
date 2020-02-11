@@ -1,4 +1,7 @@
-<h1 class="animated fadeIn">{{heroe.nombre}} <small>{{heroe.aparicion}}</small></h1>
+<h1 class="animated fadeIn">
+
+    {{heroe.nombre | uppercase}} <small>({{heroe.aparicion | date:"y"}})</small>
+</h1>
 <hr>
 
 <div class="row animated fadeIn fast">
@@ -16,7 +19,6 @@
         <div class="text-right">
             <img *ngIf="heroe.casa=='DC'" src="assets/img/dc.png" class="img_logo" alt="">
             <img *ngIf="heroe.casa=='Marvel'" src="assets/img/marvel.png" class="img_logo" alt="">
-            <img src="assets/img/vegeta.png" class="img_logo" alt="">
         </div>
     </div>
 </div>
