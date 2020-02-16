@@ -16,7 +16,7 @@ export class Heroe2Component {
     this.activateRoute.params.subscribe(params =>{
       this.termino = params['id2'];
       this.heroe2 = this._heroesService.buscarHeroes(params['id2']);
-       console.log("----"+this.heroe2 );
+       console.log(this.heroe2 );
     })
    }
 

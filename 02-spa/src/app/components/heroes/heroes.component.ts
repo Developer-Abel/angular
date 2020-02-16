@@ -21,13 +21,15 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit() {
 
-    this.heroes = this._heroesService.getHeroes();
-    //  console.log(this.heroes);
+     this.heroes = this._heroesService.getHeroes();
+      //  console.log(this.heroes);
   }
+
   verHeroe(idx: number){
   //  console.log(idx); //envia el id por la url (solo hace falta cacharlo)
   this.router.navigate(['/heroe', idx]);
   }
+
 }
 
 

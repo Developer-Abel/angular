@@ -22,6 +22,7 @@ import { HeroeComponent } from './components/heroe/heroe.component';
 import { DragonballsComponent } from './components/dragonballs/dragonballs.component';
 import { DragonballComponent } from './components/dragonball/dragonball.component';
 import { Heroe2Component } from './components/heroe2/heroe2.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { Heroe2Component } from './components/heroe2/heroe2.component';
     HeroeComponent,
     DragonballsComponent,
     DragonballComponent,
-    Heroe2Component
+    Heroe2Component,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@
 
     Buscando <small>{{termino}}</small></h1>
 <hr>
-<div class="row animated fadeIn fast">
+<!-- <div class="row animated fadeIn fast">
     <div class="col-md-12" *ngIf="heroe2.length==0">
         <div class="alert alert-info" role="alert">
             no existen resultados con el término: <b>{{termino}}</b>
@@ -18,5 +18,18 @@
             <p class="card-text">{{heroe.bio}}</p>
             <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
         </div>
+        <div>
+            <button type="button" class="btn btn-primary" (click)="verHeroes(i)">Regresar</button>
+        </div>
+    </div>
+</div> -->
+<div class="container">
+    <div class="col-md-12" *ngIf="heroe2.length==0">
+        <div class="alert alert-info" role="alert">
+            no existen resultados con el término: <b>{{termino}}</b>
+        </div>
+    </div>
+    <div class="card-columns">
+        <app-heroe-tarjeta [heroe]="heroe" [idx]="heroe.indice" *ngFor="let heroe of heroe2"></app-heroe-tarjeta>
     </div>
 </div>
